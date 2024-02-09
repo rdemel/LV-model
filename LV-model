@@ -79,7 +79,7 @@ ani = FuncAnimation(fig, animate, init_func=init, frames=len(t), interval=20, bl
 # Saves the animation as a GIF-used the pillow writer for saving, I picked this one because it does not require downloading any extra mediaplayers
 ani.save('bacterial_dynamics.gif', writer='pillow', fps=20)
 
-# Generates a unique timestamp
+# Generates a unique timestamp everytime this script is activatedby the user
 timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
 
 # timestamp in the filename
