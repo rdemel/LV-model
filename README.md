@@ -13,9 +13,9 @@ Parameters are constant
 Environment is constant
 DeltaA- The degradation rate of the antibiotic is constant- which is very wrong as this constant does not take into account antibiotics with a minor secondary mechanism of action, pharmacokinetics, environmental degradation and potential active metabolites.
 
-##Parameters of the model
+## Parameters of the model
 
-##Installation
+## Installation
 
 Can clone this repository or download this file as a py file and run it on your computer.
 
