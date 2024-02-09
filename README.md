@@ -1,21 +1,26 @@
 # LV-model
-LV model attempt to simulate competition between resistant and sensitive bacterial populations in the presence of an antibiotic
+LV model attempts to simulate competition between resistant and sensitive bacterial populations in the presence of an antibiotic.
 
 ## Description
 
-This a project for the SABS modelling and scientific computing module. This is an attempt at making a Lotka-Volterra model that simulates competition between resistant and sensitive bacterial populations.
+This a project for the SABS modelling and scientific computing module. This attempts to make a Lotka-Volterra model that simulates competition between resistant and sensitive bacterial populations.
 
-Lotka-volterra model is a model made of a collection of nonlinear differential equations that is used to describe the relationship between two biological entities It is usually applied to prey and predator interactions but it can be modified to describe the dynamics of a slightly different nature, like in this case, resistant against sensitive bacterial populations in a closed system in the presence of an antibiotic.
+Lotka-Volterra model is a model made of a collection of nonlinear differential equations that are used to describe the relationship between two biological entities. It is usually applied to prey and predator interactions, but it can be modified to describe the dynamics of a slightly different nature, like in this case, resistant against sensitive bacterial populations in a closed system in the presence of an antibiotic.
 
 Equations
 
 dRdt = r_R * R * (1 - (R + alpha_RS * S) / K_R) - beta_R * A * R
 
-Rate of change of the resistant bacteria over time and illustrates competition between sensitive and resistant and antibiotic.
+The rate of change of the resistant bacteria over time illustrates competition between sensitive and resistant and antibiotics.
 
 dSdt = r_S * S * (1 -(S + alpha_SR * R) / K_S) - beta_S * A * S + mu * S
 
-The rate of change of the sensitive bacteria population over time and illustrates competiton between sensitive, resistant and antibiotic. Also takes into account mutation rate of the sensitive population which converts it to the resistant population.
+The rate of change of the sensitive bacteria population over time illustrates competition between sensitive, resistant and antibiotics. It also considers the sensitive population's mutation rate, which converts it to the resistant population.
+
+dAdt = -delta_A * A
+
+Describes the change of the antibiotic over time in a system. This is an exponential decay equation.
+
 
 
 
@@ -25,7 +30,7 @@ Model assumption:
 - Homogenous mixing of the resistant and sensitive bacterial populations plus antibiotic
 - Parameters are constant
 - Environment is constant
-- DeltaA: The degradation rate of the antibiotic is constant- which is very wrong as this constant does not take into account antibiotics with a minor secondary mechanism of action, pharmacokinetics, environmental degradation and potential active metabolites.
+- DeltaA: The degradation rate of the antibiotic is constant- which needs to be corrected as this constant does not consider antibiotics with a minor secondary mechanism of action, pharmacokinetics, environmental degradation and potential active metabolites.
 
 ## Parameters of the model
 
@@ -52,5 +57,5 @@ DeltaA, the degradation rate of the antibiotic concentration over time.
 
 ## Installation
 
-Can clone this repository or download this file as a py file and run it on your computer.
+You canYou can clone this repository or download it as a py file and run it on your computer.
 
