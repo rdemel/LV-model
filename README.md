@@ -7,6 +7,18 @@ This a project for the SABS modelling and scientific computing module. This is a
 
 Lotka-volterra model is a model made of a collection of nonlinear differential equations that is used to describe the relationship between two biological entities It is usually applied to prey and predator interactions but it can be modified to describe the dynamics of a slightly different nature, like in this case, resistant against sensitive bacterial populations in a closed system in the presence of an antibiotic.
 
+Equations
+
+dRdt = r_R * R * (1 - (R + alpha_RS * S) / K_R) - beta_R * A * R
+
+Rate of change of the resistant bacteria over time and illustrates competition between sensitive and resistant and antibiotic.
+
+dSdt = r_S * S * (1 -(S + alpha_SR * R) / K_S) - beta_S * A * S + mu * S
+
+The rate of change of the sensitive bacteria population over time and illustrates competiton between sensitive, resistant and antibiotic. Also takes into account mutation rate of the sensitive population which converts it to the resistant population.
+
+
+
 Model assumption:
 
 
