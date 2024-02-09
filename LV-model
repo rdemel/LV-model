@@ -10,12 +10,12 @@ def LV_model(y,t, params):
     r_R, r_S, K_R, K_S, alpha_RS, alpha_SR, beta_R, beta_S, mu, delta_A = params
     
 #Parameters of the equation:
-    #r_R, the growth rate of the resistant population-
-    #r_S, the growth rate of the sensitive population-1
-    #K_R, the carrying capacity of the resistant population- 10,000
-    #K_S, the carrying capacity of the sensitive population- 10,000
-    #alpha_RS, the competition coefficient representing the effect of the sensitive population on the growth rate of the resistance population-1
-    #alpha_SR, The competition coefficient representing the effect of the resistant population on the growth rate of the sensitive population-1
+    #r_R, the growth rate of the resistant population
+    #r_S, the growth rate of the sensitive population
+    #K_R, the carrying capacity of the resistant population
+    #K_S, the carrying capacity of the sensitive population
+    #alpha_RS, the competition coefficient representing the effect of the sensitive population on the growth rate of the resistance population
+    #alpha_SR, The competition coefficient representing the effect of the resistant population on the growth rate of the sensitive population
     #alpha_R, the effectiveness of the antibiotic against the resistant population
     #alpha_S, the effectiveness of the antibiotic againsts the sensitive pop.
     #mu, the mutation or acquisition rate at which sensitive bacteria become resistant
