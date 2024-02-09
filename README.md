@@ -38,15 +38,15 @@ Model assumption:
 
 rR, the growth rate of the resistant population.
 
-S, the growth rate of the sensitive population-1.
+S, the growth rate of the sensitive population
 
-KR, the carrying capacity of the resistant population- 10,000.
+KR, the carrying capacity of the resistant population
 
-KS, the carrying capacity of the sensitive population- 10,000.
+KS, the carrying capacity of the sensitive population
 
-AlphaRS, the competition coefficient representing the effect of the sensitive population on the growth rate of the resistance population-1.
+AlphaRS, the competition coefficient representing the effect of the sensitive population on the growth rate of the resistance population
 
-AlphaSR, The competition coefficient representing the effect of the resistant population on the growth rate of the sensitive population-1.
+AlphaSR, The competition coefficient representing the effect of the resistant population on the growth rate of the sensitive population
 
 AlphaR, the effectiveness of the antibiotic against the resistant population.
 
@@ -57,5 +57,5 @@ DeltaA, the degradation rate of the antibiotic concentration over time.
 
 ## Installation
 
-You canYou can clone this repository or download it as a py file and run it on your computer.
+You can clone this repository or download it as a py file and run it on your computer.
 
