@@ -82,7 +82,7 @@ ani.save('bacterial_dynamics.gif', writer='pillow', fps=20)
 # Generates a unique timestamp
 timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
 
-# Use the timestamp in the filename
+# timestamp in the filename
 filename = f'bacterial_dynamics_{timestamp}.gif'
 
 # Save the animation with the unique filename
