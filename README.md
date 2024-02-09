@@ -18,16 +18,17 @@ Model assumption:
 ## Parameters of the model
 
 #Parameters of the equation:
-    rR, the growth rate of the resistant population-
-    rS, the growth rate of the sensitive population-1
-    KR, the carrying capacity of the resistant population- 10,000
-    KS, the carrying capacity of the sensitive population- 10,000
-    AlphaRS, the competition coefficient representing the effect of the sensitive population on the growth rate of the resistance population-1
-    AlphaSR, The competition coefficient representing the effect of the resistant population on the growth rate of the sensitive population-1
-    AlphaR, the effectiveness of the antibiotic against the resistant population
-    AlphaS, the effectiveness of the antibiotic againsts the sensitive pop.
-    Mu, the mutation or acquisition rate at which sensitive bacteria become resistant
-    DeltaA, the degradation rate of the antibiotic concentration over time
+
+rR, the growth rate of the resistant population-
+S, the growth rate of the sensitive population-1
+KR, the carrying capacity of the resistant population- 10,000
+KS, the carrying capacity of the sensitive population- 10,000
+AlphaRS, the competition coefficient representing the effect of the sensitive population on the growth rate of the resistance population-1
+AlphaSR, The competition coefficient representing the effect of the resistant population on the growth rate of the sensitive population-1
+AlphaR, the effectiveness of the antibiotic against the resistant population
+AlphaS, the effectiveness of the antibiotic againsts the sensitive pop.
+Mu, the mutation or acquisition rate at which sensitive bacteria become resistant
+DeltaA, the degradation rate of the antibiotic concentration over time
 
 ## Installation
 
