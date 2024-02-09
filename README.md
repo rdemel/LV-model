@@ -8,6 +8,8 @@ This a project for the SABS modelling and scientific computing module. This is a
 Lotka-volterra model is a model made of a collection of nonlinear differential equations that is used to describe the relationship between two biological entities It is usually applied to prey and predator interactions but it can be modified to describe the dynamics of a slightly different nature, like in this case, resistant against sensitive bacterial populations in a closed system in the presence of an antibiotic.
 
 Model assumption:
+
+
 Homogenous mixing of the resistant and sensitive bacterial populations plus antibiotic
 Parameters are constant
 Environment is constant
