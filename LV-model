@@ -36,3 +36,19 @@ y0 = [200, 500, 50]
 
 #Time intervals 
 t = np.linspace(0, 100, 1000)
+
+#Section responsible for resolving the ODEs above which is defined as LV_module, over the time array t , starting from the intitial y0 codnitions and using params all listed above.
+# Arg passess extra parametres to LV_model
+
+solution = odeint(LV_model, y0, t, args = (params,))
+
+#Creates the figure with axes, axes limit, labels and legend
+fig, ax = plt.subplots()
+line1, = ax.plot([], [], 'g-', label='Resistant Bacteria population')
+line2, = ax.plot([], [], 'b-', label='Sensitive Bacteria population')
+line3, = ax.plot([], [], 'r--', label='Antibiotic Concentration')
+ax.set_xlim(0, 100)
+ax.set_ylim(0, max(np.max(solution[:,0]), np.max(solution[:,1])) * 1.1)
+ax.set_xlabel('Time')
+ax.set_ylabel('Population / Concentration')
+ax.legend()
